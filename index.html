@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Estilos -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <!-- Importar libreria de iconos -->
 
@@ -23,7 +23,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">LOGO o Nombre</a>
+        <a href="./assets/img/profile/pmlogo.jpg" class="logo"> <img src="./assets/img/profile/pmlogo.jpg" alt=""> </a>
 
         <!-- TO DO-->
         <input type="checkbox" name="checkbox" id="menu-toggle">
@@ -32,51 +32,269 @@
         </label>
 
         <ul class="navlist">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about-me">Acerca de mi</a></li>
+            <li><a href="#footer">Contacto</a></li>
         </ul>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-text">
             <h5>Técnico Universitario en Programación</h5>
             <h5>Desarrollador Full-Stack</h5>
-            <h4>
-                <i class='bx bxl-python'></i> - 
-                <i class='bx bxl-django'></i>, 
-                <i class='bx bxl-javascript'></i> - 
-                <i class='bx bxl-react'></i> - 
-                <i class='bx bxl-vuejs'></i>, 
-                <i class='bx bxl-postgresql'></i>, 
-                <i class='bx bxl-mongodb'></i>
-            </h4>
             <h1>Pablo E. MONGE</h1>
             <p>
                 Si estás buscando un desarrollador comprometido, creativo y orientado a resultados, 
                 ¡no dudes en ponerte en contacto conmigo! Estoy emocionado de trabajar juntos para 
                 hacer realidad tus ideas y objetivos.
             </p>
-            <a href="#">CV</a>
-            <a href="#" class="proyects">Mis Proyectos <i class='bx bx-folder-open'></i></a>
+            <a href="https://drive.google.com/file/d/1xNcFrQXg2k8OYWxw1apUi2pCvToWWnX5/view?usp=drive_link" target="_blank">CV</a>
+            <a href="#projects-title" class="proyects">Proyectos <i class='bx bx-folder-open'></i></a>
         </div>
 
         <div class="hero-img">
-            <img src="./assets/img/WhatsApp Image 2023-08-02 at 12.39.49-modified.png" alt="pablo monge img">
+            <img src="./assets/img/profile/editada-modified (1).png" alt="pablo monge img">
         </div>
         
     </section>
 
     <div class="icons">
-        <a href="#"><i class="ri-github-fill"></i></a>
-        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="https://github.com/pamonge" target="_blank"><i class="ri-github-fill"></i></a>
+        <a href="https://www.linkedin.com/in/pablo-esteban-monge-benavente" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
     </div>
 
     <div class="scroll-down">
-        <a href="#"><i class="ri-arrow-down-double-line"></i></a>
+        <a href="#"> <abbr class="tooltip" title="Continua hacia abajo!!"><i class="ri-arrow-down-double-line"></i></abbr> </a>
+    </div>
+    <!-- Acerca de mi -->
+    <div class="about">
+        <div class="about-text">
+            <h4 id="about-me">Acerca de mi</h4>
+            <p>
+                ¡Hola! Soy Pablo Esteban Monge Benavente. Durante mi formación, adquirí habilidades técnicas en el desarrollo de aplicaciones web y sistemas informáticos. Me especialicé en el uso de tecnologías como HTML, CSS, SQL, JavaScript y Python, así como en el uso de frameworks como Bootstrap, React, Vue3 y Django.
+            </p> 
+            <p>
+                Además de estar en capacidad de realizar Proyectos de Implementación de Sistemas Informáticos, Testing QA, utilizando herramientas de diseño como Figma y diagramación como Drawio o Lucid Chart
+            </p> 
+        </div>
+        <div class="about-techs">
+            <h4>
+                <i class='bx bxl-python'></i> - 
+                <i class='bx bxl-django'></i>
+            <h4>
+                <i class='bx bxl-javascript'></i> - 
+                <i class='bx bxl-react'></i> - 
+                <i class='bx bxl-vuejs'></i>
+            </h4> 
+            <h4>
+                <i class='bx bxl-postgresql'></i>, 
+                <i class='bx bxl-mongodb'></i>
+            </h4>
+        </div>
     </div>
 
+    <!-- Proyectos -->
+    <div class="projects">
+    <h2 id="projects-title">Mis Proyectos</h2>
+
+        <div class="wrapper">
+            <div class="project-description"> 
+                <p>
+                    Proyecto de implementación de sistema para optimizar el funcionamiento de una academia de vuelo.
+                </p> 
+            </div>
+            <div class="container"> 
+                <input class="inputs" type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Perfil de Administrador</h4>
+                            <p>
+                                Vista del perfil de administrador, desde el cual se gestionan usuarios, cursos e información personal 
+                            </p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide" id="c2" >
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista de cursos</h4>
+                            <p>
+                                Vista de la sección de cursos, desde la cual se puede agregar, editar o eliminar el curso deseado.
+                            </p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide" id="c3" >
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Perfil de alumno</h4>
+                            <p>
+                                Perfil de un usuario alumno, el cual puede consultar los cursos en los que se encuentra inscripto y ver su evolución en cada curso.
+                            </p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide" id="c4" >
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista de perfil de profesor</h4>
+                            <p>
+                                El docente puede ver los cursos que se encuentra dictando, la lista de alumnos inscriptos, colocar calificaciones y gestionar su perfil.
+                            </p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!--Sitio Web-->
+
+        <div class="wrapper">
+            <div class="project-description"> 
+                <p >
+                    Sitio web diseñado para una empresa que se encuentra dentro del rubro informático, se encuentra diseñado manteniendo 5 pantallas básicas.
+                </p> 
+                <p>
+                    Siempre se mantiene visible el menu de navegación en la parte lateral izquierda.
+                </p>                  
+            </div>
+            <div class="container"> 
+                <input class="inputs" type="radio" name="slide1" id="c5" checked>
+                <label for="c5" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista página de inicio</h4>
+                            <p>Página principal del sitio desde la cual se inicia la navegación, posee animaciones y un carrousel que muestra los principales productos y servicios. </p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide1" id="c6" >
+                <label for="c6" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista del pie de página</h4>
+                            <p>Vista donde se encuentran las redes sociales, ubicación, acuerdos legales y de privacidad.</p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide1" id="c7" >
+                <label for="c7" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista de la sección de contacto</h4>
+                            <p>Vista donde se proporciona un formulario de contacto con los dueños del sitio.</p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide1" id="c8" >
+                <label for="c8" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista de sección de servicios</h4>
+                            <p>Vista donde la empresa expone los principales servicios que ofrece.</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <!--Tienda-->
+
+        <div class="wrapper">
+            <div class="project-description"> 
+                <p>Tienda on line, diseñada en página única, con validación de usuario, la persistencia de datos se realiza mediante una base de datos gestionada por el administrador.</p> 
+            </div>
+            <div class="container"> 
+                <input class="inputs" type="radio" name="slide2" id="c9" checked>
+                <label for="c9" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista de la tienda</h4>
+                            <p>Vista del carrousel de productos, una barra de navegación y una lista de productos.</p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide2" id="c10" >
+                <label for="c10" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista del carrito</h4>
+                            <p>Vista del carrito con el producto seleccionado, puede realizarse la compra o bien eliminar el producto del carrito.</p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide2" id="c11" >
+                <label for="c11" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>vista del Carrito</h4>
+                            <p>Vista previa del carrito con más de un producto seleccionado</p>
+                        </div>
+                    </div>
+                </label>
+                <input class="inputs" type="radio" name="slide2" id="c12" >
+                <label for="c12" class="card">
+                    <div class="row">
+                        <div class="icon"><img src="./assets/img/profile/pmlogo-modified.png" alt="pm logo"></div>
+                        <div class="description">
+                            <h4>Vista del administrador</h4>
+                            <p>Unicamente el administrador del sitio puede efectuar cambios en la base de datos de los productos y usuarios.</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+         <div class="container-form">
+            <div class="box-info">
+                <h2>Contacto</h2>
+                <div class="data">
+                    <p><i class="fa-solid fa-phone"></i> +54 9 11 3877 4301</p>
+                    <p><i class="fa-solid fa-envelope"></i>pablomonge55@gmail.com</p>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/pamonge" target="_blank"><i class="ri-github-fill"></i></a>
+                </div>
+            </div>
+            <form class="form">
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre y apellido" name="name" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" required placeholder="Correo electrónico" name="email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Asunto" name="subject" required>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="input-box">
+                    <textarea placeholder="Escribe tu mensaje..." name="message"  required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
 </body>
 </html>
