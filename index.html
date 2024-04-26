@@ -274,27 +274,35 @@
                     <a href="https://github.com/pamonge" target="_blank"><i class="ri-github-fill"></i></a>
                 </div>
             </div>
-            <form class="form">
+            <form class="form" id="form">
                 <div class="input-box">
-                    <input type="text" placeholder="Nombre y apellido" name="name" required>
+                    <input type="text" placeholder="Nombre y apellido" name="name" id="name" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="email" required placeholder="Correo electrónico" name="email" required>
+                    <input type="email" required placeholder="Correo electrónico" name="email" id="email" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Asunto" name="subject" required>
+                    <input type="text" placeholder="Asunto" name="subject" id="subject" required>
                     <i class="fa-solid fa-pen-to-square"></i>
                 </div>
                 <div class="input-box">
-                    <textarea placeholder="Escribe tu mensaje..." name="message"  required></textarea>
+                    <textarea placeholder="Escribe tu mensaje..." name="message" id="message" required></textarea>
                 </div>
-                <button type="submit">Enviar mensaje</button>
-            </form>
+                <input class="button" type="submit" id="button" value="ENVIAR MENSAJE" >
+            </form>    
+            <!-- emailJS -->
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+                emailjs.init('te1P6FQ1sjpg9DuCT')
+            </script>
         </div>
-
     </footer>
+    <!-- fontawesome del form -->
     <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+    <script src="./js/sendEmail.js" ></script>
 </body>
 </html>

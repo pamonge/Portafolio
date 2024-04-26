@@ -529,7 +529,7 @@ form {
     color:#736cc7;
 }
 
-form > button {
+form > .button {
     width: 100%;
     padding: 10px;
     outline: none;
@@ -542,7 +542,7 @@ form > button {
     border-radius: 30px;
 }
 
-form > button:hover,
+form > .button:hover,
 .links > a:hover {
     background: #736cc7;
 }
@@ -632,7 +632,7 @@ form > button:hover,
         font-size: 14px;
     }
 
-    .form > button {
+    .form > .button {
         font-size: 14px;
     }
 }
