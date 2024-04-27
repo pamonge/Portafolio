@@ -130,7 +130,7 @@ section {
 .hero-text p {
    font-size: 85%;
    margin-bottom: 40px;
-   width: 350px;
+   max-width: 350px;
    line-height: 1.9;
    text-align: justify;
 }
@@ -569,6 +569,7 @@ form > .button:hover,
 
     .hero-text {
         padding-top: 0;
+        max-width: 100vw;
     }
 
     h1 {
@@ -577,15 +578,17 @@ form > .button:hover,
 
     .hero-text p {
         font-size: 150%;
+        max-width: 90vw;    
     }
 
     .hero-img {
+        padding: 2rem;
         text-align: center;
-        height: 70vh;
+        height: 50vh;
     }
 
     .hero-img img {
-        width: 50%;
+        width: 90%;
         margin: 10% 0 0 10%;
     }
 
