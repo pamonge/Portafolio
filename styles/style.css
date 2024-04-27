@@ -743,7 +743,7 @@ form > .button:hover,
 /* form */
 
 @media screen and (max-width:600px) {
-    
+
     .container-form {
         width: 95%;
         display: flex;
@@ -771,5 +771,48 @@ form > .button:hover,
     .hero-img img:hover {
         width: 300px;
         opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .header {
+        max-width: 300px;
+        width: 85vw;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .menu-icon-action {
+        width: 50px;
+        height: 50px;
+    }
+
+    #menu-icon {
+        font-size: 30px;
+        padding: 20%;
+    }
+
+    .hero {
+        width: 100vw;
+    }
+
+    .hero-text > h5{
+        font-size: 14px;
+        margin: 25px auto;
+    }
+
+    .hero-text > h1 {
+        font-size: 30px;
+    }
+
+    .hero-text > p {
+        font-size: 14px;
+    }
+
+    .about {
+        padding-top: 5%;
     }
 }
