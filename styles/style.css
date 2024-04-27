@@ -59,6 +59,8 @@ header {
 
 .menu-icon-action {
     display: none;
+    background-color: #131313cb;
+    border-radius: 50%;
 }
 
 #menu-icon {
@@ -68,6 +70,9 @@ header {
     display: none;
 } 
 
+#menu-toggle:checked + .menu-icon-action {
+    background-color: transparent;
+}
 
 #menu-toggle {
     display: none;
@@ -562,9 +567,7 @@ form > .button:hover,
     }
 
     #menu-icon {
-        background-color: #21243ddd;
         padding: 1rem;
-        border-radius: 50%;
     }
 
     .hero-text {
@@ -697,7 +700,6 @@ form > .button:hover,
         margin-left: 0;
         display: block;
         margin: 7px 0;
-
     }
 
     #menu-toggle:checked + label.menu-icon-action + ul {
@@ -710,7 +712,7 @@ form > .button:hover,
 
     .wrapper {
         width: auto;
-        height: 60vh;
+        /* height: 60vh; */
         flex-direction: column;
         flex-wrap: nowrap;
     }
@@ -729,6 +731,10 @@ form > .button:hover,
         max-width: 95%;
     }
 
+    .card {
+        max-height: 30vh;
+    }
+
     .card > .row > .description {
         display: none;
     }
@@ -737,11 +743,16 @@ form > .button:hover,
 /* form */
 
 @media screen and (max-width:600px) {
+    
     .container-form {
         width: 95%;
         display: flex;
         flex-direction: column;
         gap:20px;
+    }
+
+    .icons {
+        display: none;
     }
 
     .box-info {
@@ -750,5 +761,15 @@ form > .button:hover,
 
     .box-info > h1 {
         font-size: 1.5rem;
+    }
+
+    .hero-img img {
+        margin: 0;
+        width: 300px;
+    }
+
+    .hero-img img:hover {
+        width: 300px;
+        opacity: 0.6;
     }
 }
