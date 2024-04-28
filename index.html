@@ -21,21 +21,30 @@
 
     <title>Pablo Monge</title>
 </head>
-<body>
+<body id="body">
     <header>
         <a href="./assets/img/profile/pmlogo.jpg" class="logo"> <img src="./assets/img/profile/pmlogo.jpg" alt=""> </a>
 
         <!-- TO DO-->
-        <input type="checkbox" name="checkbox" id="menu-toggle">
+        <!-- <input type="checkbox" name="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon-action">
             <div class='bx bx-menu-alt-right' id="menu-icon"></div>
-        </label>
+        </label> -->
+        
+        
+        <button id="btn-menu-burguer">
+            <i class='bx bx-menu-alt-right'></i>
+        </button>
 
-        <ul class="navlist">
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#about-me">Acerca de mi</a></li>
-            <li><a href="#footer">Contacto</a></li>
-        </ul>
+        <nav id="navbar" class="navbar visible">
+            <ul class="navlist">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about-me">Acerca de mi</a></li>
+                <li><a href="#footer">Contacto</a></li>
+            </ul>
+        </nav>
+
+        
     </header>
 
     <!-- Hero Section -->
@@ -304,6 +313,6 @@
     </footer>
     <!-- fontawesome del form -->
     <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
-    <script src="./js/sendEmail.js" ></script>
+    <script src="./js/javaScript.js" ></script>
 </body>
 </html>
