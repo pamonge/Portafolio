@@ -57,8 +57,6 @@ camposFormulario.forEach((campo) => {
 	campo.addEventListener('invalid', evento => evento.preventDefault())
 })
 
-
-
 //--------------------------- Menu hamburguesa ----------------------------
 
 const btnMenuHamburguesa = document.getElementById("btn-menu-burguer");
@@ -73,3 +71,19 @@ btnMenuHamburguesa.addEventListener("click", () => {
 navbar.addEventListener('mouseleave', () => {
   navbar.classList.toggle('visible');
 })
+
+// ------------------------- ScrollReveal
+const sr = ScrollReveal({
+  distance: '65px',
+  duration: 2000,
+  delay: 450,
+  reset: true
+})
+
+sr.reveal('.hero-text', {delay: 400, origin: 'top'})
+
+sr.reveal('.hero-img', {delay: 400, origin: 'top'})
+
+sr.reveal('.icons', {delay: 400, origin: 'left'})
+
+sr.reveal('.scroll-down', {delay: 400, origin: 'right'})
