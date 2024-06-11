@@ -72,6 +72,7 @@ navbar.addEventListener('mouseleave', () => {
   navbar.classList.toggle('visible');
 })
 
+
 // ------------------------- ScrollReveal
 const sr = ScrollReveal({
   distance: '65px',
